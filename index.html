@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor || Coding Bootcamp Testimonial Slider</title>
+    <!-- TAILWIND STYLES -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="/src/input.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <main class=" h-screen flex flex-col justify-center max-w-screen-lg mx-auto">
+
+        <div class="swiper w-full h-full">
+            <div class="swiper-wrapper">
+                <!-- TESTIMONIAL ONE -->
+                <div class=" swiper-slide px-8 grid py-8 gap-y-12 md:grid-cols-2 md:items-center">
+                    <div class=" flex flex-col items-center md:order-last">
+                        <img src="./images/image-tanya.jpg" alt="Tanya Sinclair"
+                            class=" image w-64 rounded-md shadow-lg md:w-96">
+                        <div class="flex items-center gap-x-10 bg-white py-3 px-5 -m-6 rounded-full shadow-lg">
+                            <button class="button-prev"><img src="./images/icon-prev.svg" alt="prev-button"></button>
+                            <button class="button-next"><img src="./images/icon-next.svg" alt="next-button"></button>
+                        </div>
+                    </div>
+
+                    <blockquote class=" text-sm text-center flex flex-col items-center gap-y-5 md:text-lg md:text-start md:items-start">
+                        <img src="./images/pattern-quotes.svg" alt="quotes" class=" -mb-12 w-16 md:relative md:left-20">
+                        <p class=" text-darkBlue opacity-75">
+                            “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t
+                            recommend this course enough. I’m now in the job of my dreams and so excited about the
+                            future. ”
+                        </p>
+                        <div class=" flex flex-col items-center md:flex-row md:gap-x-3">
+                            <cite class=" text-darkBlue font-bold">
+                                Tanya Sinclair
+                            </cite>
+                            <p class=" text-grayishBlue">
+                                UX Engineer
+                            </p>
+                        </div>
+                    </blockquote>
+                </div>
+
+                <!-- TESTIMONIAL TWO -->
+                <div class=" swiper-slide px-8 grid py-8 gap-y-16 md:grid-cols-2 md:items-center">
+                    <div class=" flex flex-col items-center md:order-last">
+                        <img src="./images/image-john.jpg" alt="John Takpor"
+                            class=" image w-64 rounded-md shadow-lg md:w-96">
+                        <div class="flex items-center gap-x-10 bg-white py-3 px-5 -m-6 rounded-full shadow-lg">
+                            <div class="button-prev hover:cursor-pointer"><img src="./images/icon-prev.svg" alt="prev-button"></div>
+                            <div class="button-next hover:cursor-pointer"><img src="./images/icon-next.svg" alt="next-button"></div>
+                        </div>
+                    </div>
+
+                    <blockquote class=" text-sm text-center flex flex-col items-center gap-y-5 md:text-lg md:text-start md:items-start">
+                        <img src="./images/pattern-quotes.svg" alt="quotes" class=" -mb-12 w-16 md:relative md:left-20">
+                        <p class=" text-darkBlue opacity-75">
+                            “ if you want to lay the bext foundation possible i'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer ”
+                        </p>
+                        <div class=" flex flex-col items-center md:flex-row md:gap-x-3">
+                            <cite class=" text-darkBlue font-bold">
+                                John Takpor
+                            </cite>
+                            <p class=" text-grayishBlue">
+                                Junior Front-end Developer
+                            </p>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="swiper-pagination hidden sm:block"></div>
+        </div>
+
+        <img src="/images/pattern-curve.svg" alt="curved pattern" class=" absolute left-0 bottom-0 -z-10">
+    </main>
+
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- VANILLA JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
