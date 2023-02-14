@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
+- Solution URL: (https://github.com/pauldevcodes/coding-bootcamp-testimonial-slider)
 - Live Site URL: (https://app.netlify.com/sites/pauldev-testimonial-slider/overview)
 
 ### Built with
